@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use Fibdesign\Blog\Models\Article;
 use Illuminate\Database\Seeder;
+use Maxup\Blog\Models\Category;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,6 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
+        Category::factory()->count(10)->creaate();
+        Article::factory()->count(10)->creaate();
     }
 }
