@@ -3,7 +3,8 @@
     "description": "Laravel Blog Api",
     "keywords": [
         "fibdesign",
-        "blog"
+        "blog",
+        "api"
     ],
     "homepage": "https://github.com/fibdesign/blog",
     "license": "MIT",
