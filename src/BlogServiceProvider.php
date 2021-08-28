@@ -24,6 +24,9 @@ class BlogServiceProvider extends ServiceProvider
                 __DIR__.'/../config/config.php' => config_path('blog.php'),
             ], 'config');
 
+            $this->publishes([
+                __DIR__.'/../database/migrations/' => database_path('migrations')
+            ], 'blog-migrations');
             // Publishing the views.
             /*$this->publishes([
                 __DIR__.'/../resources/views' => resource_path('views/vendor/blog'),
