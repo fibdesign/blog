@@ -1,5 +1,9 @@
 <?php
 
+use Fibdesign\Blog\Controllers\ArticleController;
+use Fibdesign\Blog\Controllers\CategoryController;
+use Fibdesign\Blog\Controllers\CommentController;
+use Fibdesign\Blog\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 Route::prefix('apiClient')->middleware('api')->group(function (){
@@ -10,7 +14,6 @@ Route::prefix('apiClient')->middleware('api')->group(function (){
     Route::get('/categories', function (){ return Category::all(); });
 });
 Route::prefix('apiAdmin')->middleware(['api','auth:sanctum'])->group(function (){
-
     Route::get('/articles/popular' , [ArticleController::class, 'popular']);
     Route::apiResource('articles', ArticleController::class);
     Route::apiResource('/comments', CommentController::class)->only(['index','update']);
