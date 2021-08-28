@@ -22,11 +22,12 @@ class BlogServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('blog.php'),
-            ], 'config');
+                __DIR__.'/../database/migrations/' => database_path('migrations'),
+                __DIR__.'/../database/factories/' => database_path('factories'),
+                __DIR__.'/../database/seeders/' => database_path('seeders'),
+            ], 'fibdesign-blog');
 
-            $this->publishes([
-                __DIR__.'/../database/migrations/' => database_path('migrations')
-            ], 'blog-migrations');
+
             // Publishing the views.
             /*$this->publishes([
                 __DIR__.'/../resources/views' => resource_path('views/vendor/blog'),

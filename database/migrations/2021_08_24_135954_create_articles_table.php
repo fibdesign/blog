@@ -16,9 +16,9 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->string('title', 250);
-            $table->string('subtitle', 250);
-            $table->longText('description');
-            $table->string('thumbnail', 1000);
+            $table->string('subtitle', 250)->nullable();
+            $table->longText('description')->nullable();
+            $table->string('thumbnail', 1000)->nullable();
             $table->string('tags', 1000)->nullable();
             $table->boolean('popular')->default(false);
             $table->foreignId('category_id')->constrained();
