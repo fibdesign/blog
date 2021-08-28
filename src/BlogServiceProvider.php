@@ -21,7 +21,7 @@ class BlogServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/blog.php' => config_path('blog.php'),
+                __DIR__.'/../config/config.php' => config_path('blog.php'),
             ], 'config');
 
             // Publishing the views.
