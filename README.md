@@ -8,7 +8,7 @@ This repo is not ready yet
 ![Packagist License](https://img.shields.io/packagist/l/maxup/blog)
 [![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/maxup/blog)](https://www.php.net/)
 [![Laravel](https://img.shields.io/badge/laravel-8.x-red)](https://laravel.com/)
-[![GitHub last commit](https://img.shields.io/github/last-commit/fibdesign/blog-api)](https://github.com/fibdesign/blog-api)
+[![GitHub last commit](https://img.shields.io/github/last-commit/fibdesign/blog)](https://github.com/fibdesign/blog)
 
 Sometimes you need to make same api for multiple projects. Usually in projects you need a blog and that's why you need this package, you need it to mack a blog api fast.
 
