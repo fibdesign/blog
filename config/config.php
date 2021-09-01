@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'perPage' => env('MAXUP_BLOG_ARTICLE_PER_PAGE', 15),
+    'perPage' => env('FIBDESIGN_BLOG_ARTICLE_PER_PAGE', 15),
 
-    'popularLimit' => env('MAXUP_BLOG_ARTICLES_POPULAR_NUM', 5),
+    'popularLimit' => env('FIBDESIGN_BLOG_ARTICLES_POPULAR_NUM', 5),
 ];
