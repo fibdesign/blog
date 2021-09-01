@@ -1,6 +1,6 @@
-# Status : Developing
+# Documentation
 
-This repo is not ready yet
+[Documentation](https://blog.fibdesign.ir/)
 
 # Maxup Blog Api
 
@@ -44,8 +44,8 @@ php artisan storage:link
 You can change some parameters in `.env`
 
 ```dotenv
-MAXUP_BLOG_ARTICLE_PER_PAGE = 15
-MAXUP_BLOG_ARTICLES_POPULAR_NUM = 5
+FIBDESIGN_BLOG_ARTICLE_PER_PAGE = 15
+FIBDESIGN_BLOG_ARTICLES_POPULAR_NUM = 5
 ```
 
 ### Changelog
