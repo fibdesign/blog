@@ -9,7 +9,7 @@ description: >-
 
 ## Installation
 
-* You can install the package via composer.
+* You can install the package via composer. 
 
 ```bash
 composer require fibdesign/blog
