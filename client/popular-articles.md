@@ -34,7 +34,7 @@ application/json
         "subtitle": "short description",
         "thumbnail": "https://example.com/image.jpg",
         "popular": true,
-        "registered": "4 hours from now",
+        "registered": "1 ساعت پیش",
         "category": {
             "id": 1,
             "label": "label"

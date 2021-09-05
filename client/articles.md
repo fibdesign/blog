@@ -29,7 +29,7 @@ application/json
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-the "data" resualt are ordered by latest.
+The "data" result are ordered by latest.
 {% endapi-method-response-example-description %}
 
 ```javascript
@@ -40,7 +40,7 @@ the "data" resualt are ordered by latest.
             "title": "Lorem Ipsome number",
             "subtitle": "this is a short description",
             "thumbnail": "https://example.com/image.jpg",
-            "registered": "2 weeks ago",
+            "registered": "1 ساعت پیش",
             "category": {
                 "id": 1,
                 "label": "label"

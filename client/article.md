@@ -27,21 +27,43 @@ application/json
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
-```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+```javascript
+{
+    "data": {
+        "id": 1,
+        "title": "some title",
+        "subtitle": "short description",
+        "description": "Lorem Ipsome ...",
+        "thumbnail": "https://example.com/image.jpg",
+        "tags": "['tag-1','tag-2']",
+        "popular": true,
+        "registered": "1 ساعت پیش",
+        "category": {
+            "id": 1,
+            "label": "label"
+        },
+        "comments": [
+            {
+                "name": "user name",
+                "content": "Lorem Ipsome",
+                "registered": "5 دقیقه پیش"
+            }
+        ]
+    }
+}
 ```
 {% endapi-method-response-example %}
 
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
-Could not find a cake matching this query.
+
 {% endapi-method-response-example-description %}
 
-```
-{    "message": "Ain't no cake like that."}
+```javascript
+{    "message": "مطلب پیدا نشد."    }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
