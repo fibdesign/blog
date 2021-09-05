@@ -10,6 +10,10 @@
 * [Comment](client/comment.md)
 * [Categories](client/categories.md)
 
+## Admin
+
+* [Articles](admin/articles.md)
+
 ## Errors
 
 * [401](errors/401.md)
