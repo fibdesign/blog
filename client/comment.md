@@ -39,23 +39,17 @@ A great feedback
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=201 %}
 {% api-method-response-example-description %}
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
-{    "name": "Cake's name",    "rwecipe": "Cake's recipe name",    "cake": "Binary cake"}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
-```
-{    "message": "Ain't no cake like that."}
+```javascript
+{
+    "name": "example name",
+    "content": "example content",
+    "registered": "1 ثانیه پیش"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

@@ -29,7 +29,10 @@ application/json
     {
         "id": 1,
         "label": "label"
-    }
+    },
+    .
+    .
+    .
 ]
 ```
 {% endapi-method-response-example %}

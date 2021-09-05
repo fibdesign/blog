@@ -12,8 +12,8 @@
 
 ## Errors
 
-* [500](errors/500.md)
-* [404](errors/404.md)
 * [401](errors/401.md)
 * [403](errors/403.md)
+* [404](errors/404.md)
+* [500](errors/500.md)
 
