@@ -10,3 +10,7 @@
 * [Comment](client/comment.md)
 * [Categories](client/categories.md)
 
+## Errors
+
+* [500](errors/500.md)
+

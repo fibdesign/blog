@@ -26,8 +26,24 @@ application/json
 
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+[
+    {
+        "id": 1,
+        "title": "some title",
+        "subtitle": "short description",
+        "thumbnail": "https://example.com/image.jpg",
+        "popular": true,
+        "registered": "4 hours from now",
+        "category": {
+            "id": 1,
+            "label": "label"
+        }
+    },
+    .
+    .
+    .
+]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
