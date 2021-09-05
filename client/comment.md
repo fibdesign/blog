@@ -39,9 +39,9 @@ A great feedback
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=201 %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Cake successfully retrieved.
+
 {% endapi-method-response-example-description %}
 
 ```javascript
@@ -49,6 +49,22 @@ Cake successfully retrieved.
     "name": "example name",
     "content": "example content",
     "registered": "1 ثانیه پیش"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+Validation failed
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "message": "اعتبار سنجی ورودی های داده شده نا موفقت بود. ",
+    "errors": {
+        "name": [ "تکمیل  نام الزامی است" ],
+        "content": [ "تکمیل  محتوا الزامی است" ]
+    }
 }
 ```
 {% endapi-method-response-example %}

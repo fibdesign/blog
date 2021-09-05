@@ -19,5 +19,7 @@
 * [401](errors/401.md)
 * [403](errors/403.md)
 * [404](errors/404.md)
+* [422](errors/422.md)
+* [429](errors/429.md)
 * [500](errors/500.md)
 
